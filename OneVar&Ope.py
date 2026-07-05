@@ -173,3 +173,46 @@ print(type(name))  # Note: The input() function always converts any input into a
 # Reading user input and explicitly casting it to an integer
 val = int(input("enter your age: "))
 print(type(val))
+
+
+# ==============================================================================
+# 11. Practice Questions & Solutions
+# ==============================================================================
+
+# --- Question 1: WAP to check if a number entered by the user is odd or even. ---
+# Read an integer from the user
+num_check = int(input("Enter a number to check if it's odd or even: "))
+
+# Logic: Even numbers are perfectly divisible by 2 (remainder is 0)
+if num_check % 2 == 0:
+    print(f"{num_check} is an Even number.")
+else:
+    print(f"{num_check} is an Odd number.")
+
+
+# --- Question 2: WAP to find the greatest of 3 numbers entered by the user. ---
+# Read three distinct numbers from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Logic: Use conditional statements (if-elif-else) to find the largest value
+if num1 >= num2 and num1 >= num3:
+    greatest = num1
+elif num2 >= num1 and num2 >= num3:
+    greatest = num2
+else:
+    greatest = num3
+
+print(f"The greatest of the three numbers is: {greatest}")
+
+
+# --- Question 3: WAP to check if a number is a multiple of 7 or not. ---
+# Read an integer from the user
+mult_check = int(input("Enter a number to check if it's a multiple of 7: "))
+
+# Logic: If a number is a multiple of 7, dividing it by 7 leaves a remainder of 0
+if mult_check % 7 == 0:
+    print(f"{mult_check} is a multiple of 7.")
+else:
+    print(f"{mult_check} is NOT a multiple of 7.")
